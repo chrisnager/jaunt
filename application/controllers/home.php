@@ -20,16 +20,24 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('templates/header');
-    $this->load->view('index');
-    $this->load->view('templates/footer');
+		$this->load->view('index');
+		$this->load->view('templates/footer');
 	}
-  public function places($id)
-  {
-    $data['id'] = $id;
-    $this->load->view('templates/header');
-    $this->load->view('places', $data);
-    $this->load->view('templates/footer');
-  }
+	public function places($id)
+	{
+		$data['id'] = $id;
+		$this->load->view('templates/header');
+		$this->load->view('places', $data);
+		$this->load->view('templates/footer');
+	}
+
+	public function search()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('templates/page-title');
+		$this->load->view('search');
+		$this->load->view('templates/footer');
+	}
 
 }
 
