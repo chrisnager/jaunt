@@ -1,7 +1,7 @@
-/*global JauntApp, $*/
+/*global Jaunt, $*/
 
 
-window.JauntApp = {
+window.Jaunt = {
     Models: {},
     Collections: {},
     Views: {},
@@ -14,5 +14,5 @@ window.JauntApp = {
 
 $(document).ready(function () {
     'use strict';
-    JauntApp.init();
+    Jaunt.init();
 });
