@@ -1,10 +1,4 @@
-node_modules
-dist
-test/temp
-.sass-cache
-app/bower_components
-.tmp
-test/bower_components/
+.DS_Store
 *.swp
 *.swo
 ~*
