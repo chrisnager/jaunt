@@ -17,8 +17,3 @@
     <script src="/webroot/bower_components/ratchet/dist/js/ratchet.min.js"></script>
   </head>
   <body>
-    <header class="bar bar-nav">
-      <h1 class="title">jaunt</h1>
-    </header>
-
-
