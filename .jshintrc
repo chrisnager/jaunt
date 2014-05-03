@@ -20,8 +20,8 @@
     "smarttabs": true,
     "jquery": true,
     "globals": {
-        "JauntApp": true,
-        "jauntapp": true,
+        "Jaunt": true,
+        "jaunt": true,
         "_": false,
         "Backbone": false,
         "JST": false,
