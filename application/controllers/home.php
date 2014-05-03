@@ -23,10 +23,11 @@ class Home extends CI_Controller {
     $this->load->view('index');
     $this->load->view('templates/footer');
 	}
-  public function places()
+  public function places($id)
   {
+    $data['id'] = $id;
     $this->load->view('templates/header');
-    $this->load->view('places');
+    $this->load->view('places', $data);
     $this->load->view('templates/footer');
   }
 
