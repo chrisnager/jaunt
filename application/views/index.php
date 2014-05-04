@@ -2,7 +2,7 @@
 	<img class="logo" src="/webroot/img/logo.svg">
 	<div class="content-padded">
 		<div class="hero">
-			<h1><i>Jaunt.</i> Let your friends be your city guides	</h1>
+			<h1><i>&nbsp;Jaunt.</i> Let your friends be your city guides.</h1>
 			<a class="btn  btn-white  btn-padded  btn-block  btn-outlined btn-pill"  href="#add" class="btn">Add a new Jaunt</a>
 		</div>
 	 </div>
@@ -20,7 +20,7 @@
   <header class="bar bar-nav">
     <a href="/"><span class="icon icon-close pull-left btn-white"></span></a>
     <h1 class="title">Add a Jaunt</h1>
-    <a href="/search"><span class="icon icon-right-nav pull-right"></span></a>
+    <a href="/search/prospect%20park"><span class="icon icon-right-nav pull-right"></span></a>
   </header>
   <div class="content">
    	<form class="input-group">
