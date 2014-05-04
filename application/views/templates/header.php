@@ -16,6 +16,8 @@
     <link href="/webroot/css/app.css" rel="stylesheet">
 
     <!-- Include the compiled Ratchet JS -->
+    <script src="/webroot/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/webroot/bower_components/ratchet/dist/js/ratchet.min.js"></script>
+    <script src="/webroot/js/app.js"></script>
   </head>
   <body>
