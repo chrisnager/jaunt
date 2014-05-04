@@ -5,6 +5,10 @@
   <div class="content-padded">
     <?php foreach($place as $row): ?>
       <h4><?= $row->name ?></h4>
+      <small><?= $response['result']['formatted_address'] ?></small>
+      <?php if (isset($response['result']['website'])) { ?>
+        <a href="<?= $response['result']['website'] ?>" target="_blank"><?= $response['result']['website'] ?></a>
+      <?php } ?>
       <p><?= $row->note ?></p>
     <?php endforeach; ?>
   </div>
