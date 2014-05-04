@@ -42,6 +42,11 @@ body {
     background-color: #00CD8A;
 }
 
+.btn-pill {
+  border-radius: 5em;
+  font-size: .8em;
+}
+
 
 
 
@@ -54,6 +59,21 @@ body {
 
 .bar {
     background-color: black;
+}
+
+.bar-tab--transparent {
+  background-color: transparent;
+  border-top: none;
+}
+
+.bar-tab--transparent .tab-item {
+  background: rgba(255,255,255,.2);
+  color: #FFF;
+  font-size: .8em;
+}
+
+.bar-tab--transparent .tab-item:first-child {
+   border-right: 2px solid rgba(255,255,255,.3);
 }
 
 .bar > .title {
@@ -95,7 +115,9 @@ body {
 .hero h1 {
   color: #FFF;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin-bottom: 20px;
 }
 
 
