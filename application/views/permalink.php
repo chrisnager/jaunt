@@ -2,9 +2,11 @@
 	<?php foreach($jaunt as $row): ?>
 	<h1 class="title"><?= $row->jaunt_name ?></h1>
 	<?php endforeach; ?>
-	<button class="btn btn-outlined btn-teal pull-right" href="#">Share</button>
 </header>
 <div class="content">
+    <div class="jaunt__description">
+    <?php var_dump($jaunt['description']) ?>
+    </div>
 	<ul class="table-view">
 		<?php foreach($jaunt as $row): ?>
 		<li class="table-view-cell media">
@@ -17,14 +19,6 @@
 			</a>
 		</li>
 		<?php endforeach; ?>
-		<li class="table-view-cell media">
-			<a href="#search" class="add-jaunt" data-transition="slide-in" href="/search">
-				<div class="media-body">
-					<span class="icon icon-plus"></span>
-					Add New Jaunt
-				</div>
-			</a>
-		</li>
 	</ul>
 </div>
 
