@@ -49,3 +49,14 @@
 .modal .content {
   background: #FFF;
 }
+
+
+
+
+
+
+
+.input-row input {
+  width: 100%;
+  padding: 20px;
+}
