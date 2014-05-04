@@ -5,7 +5,7 @@
 	<?php endforeach; ?>
 	<a class="btn btn-outlined btn-teal pull-right" href="/permalink/1">Share</a>
 </header>
-<div class="content">
+<div class="content content--<?= $this->uri->rsegment(2) ?>">
 	<ul class="table-view">
 		<li class="table-view-cell media author-card">
 			<a>

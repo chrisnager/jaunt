@@ -110,7 +110,7 @@ a {
 }
 
 .modal .content,
-.page--jaunts .content {
+.content--jaunts {
   background: #E5E8E3;
 }
 
@@ -333,6 +333,11 @@ label {
     background-image: linear-gradient(gold, orangered);
 }
 
+.place__image {
+    height: 240px;
+    margin-bottom: -70px;
+}
+
 .permalink-jaunt__name {
   position: absolute;
   top: 20px;
@@ -386,4 +391,8 @@ label {
 .permalink-jaunt__explore {
   padding-left: 15px;
   padding-bottom: 10px;
+}
+
+.page--places .input-row-textarea {
+    border: 1px solid #ddd;
 }
