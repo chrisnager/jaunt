@@ -58,7 +58,7 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function permalink() {
+	public function permalink($id) {
     $data['jaunt'] = $this->home_model->getJaunt($id);
 		$this->load->view('templates/header');
 		$this->load->view('permalink', $data);
