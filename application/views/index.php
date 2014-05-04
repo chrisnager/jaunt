@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content content--<?= $this->uri->rsegment(2) ?>">
 	<img class="logo" src="/webroot/img/logo.svg">
 	<div class="content-padded">
 		<div class="hero">
