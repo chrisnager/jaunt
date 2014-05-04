@@ -14,16 +14,16 @@ Class Places {
         return json_decode($result, true);
     }
 
-    public function getPhoto($reference)
+    public function search($query)
     {
-        $url = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference='.$reference.'&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I';
+        $url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='.$query.'&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_URL, $url);
         $result = curl_exec($ch);
         curl_close($ch);
 
-        return $result;
+        return json_decode($result, true);
     }
 }
 
