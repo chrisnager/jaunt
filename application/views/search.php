@@ -3,8 +3,8 @@
       <h1 class="title">Add a Place</h1>
 </header>
 <div class="content">
-<form>
-    <input type="text" placeholder="Search for a location">
+<form id="search"> 
+    <input type="text" name="query" placeholder="Search for a location">
 </form>
   <?php if(isset($response)) { ?>
     <ul>
@@ -20,6 +20,3 @@
     </ul>
   <?php } ?>
 </div>
-
-
-
