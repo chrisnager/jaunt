@@ -15,11 +15,6 @@
     color: white;
 }
 
-.btn-padded {
-    width: calc(100% - 20px);
-    margin: 10px;
-}
-
 
 
 
@@ -49,4 +44,8 @@
 .page--index .content {
     background: #663F1F url(/webroot/img/bridge.png) center center;
     background-size: cover;
+}
+
+.modal .content {
+  background: #FFF;
 }
