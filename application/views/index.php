@@ -4,7 +4,7 @@
 <div class="content">
 	<div class="content-padded">
 	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
-	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
+	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#" class="btn">Find a Jaunt</a>
 	 </div>
 </div>
 
@@ -19,9 +19,7 @@
 	  <div class="input-row">
 	    <input type="text" placeholder="Name your place...">
 	  </div>
-	  <div class="input-row">
-	    <input type="email" placeholder="Add a Description...">
-	  </div>
+	    <textarea placeholder="Description"></textarea>
 	</form>
   </div>
 </div>
