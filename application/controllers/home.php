@@ -26,6 +26,8 @@ class Home extends CI_Controller {
 	public function places($id)
 	{
 		$data['id'] = $id;
+    $data['place'] = $this->home_model->getPlaces($id);
+
 		$this->load->view('templates/header');
 		$this->load->view('places', $data);
 		$this->load->view('templates/footer');

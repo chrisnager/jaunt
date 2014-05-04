@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'ec2-54-225-239-184.compute-1.amazonaws.com';
-$db['default']['username'] = 'qfejeaxqtstrkx';
-$db['default']['password'] = 'FiKUM0l27SvdqmJtTrGiVVXaCf';
-$db['default']['database'] = 'd38fliurhue91h';
-$db['default']['dbdriver'] = 'postgre';
+$db['default']['hostname'] = '';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = '';
+$db['default']['dbdriver'] = '';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
