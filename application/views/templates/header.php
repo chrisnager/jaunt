@@ -10,7 +10,8 @@
     <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-startup-image" href="/startup-retina.png" media="screen and (max-device-width: 320px)" />
+    <link rel="apple-touch-startup-image" href="/webroot/img/startup-retina.png">
+
 
     <!-- Include the compiled Ratchet CSS -->
     <link href="/webroot/bower_components/ratchet/dist/css/ratchet.min.css" rel="stylesheet">
