@@ -20,15 +20,18 @@
   <header class="bar bar-nav">
     <a href="/"><span class="icon icon-close pull-left btn-white"></span></a>
     <h1 class="title">Add a Jaunt</h1>
-    <button class="btn btn-outlined btn-teal pull-right" href="#search">Next</button>
+    <a href="/search"><span class="icon icon-right-nav pull-right"></span></a>
+    <!-- <button class="btn btn-outlined btn-teal pull-right" href="#search">Next</button> -->
   </header>
   <div class="content">
    	<form class="input-group">
+   	  <label>Name</label>
 	  <div class="input-row">
-	    <input type="text" placeholder="Name your place…">
+	    <input type="text" placeholder="An awesome city trip...">
 	  </div>
+	  <label>Description</label>
 	  <div class="input-row input-row-textarea">
-	    <textarea placeholder="Description"></textarea>
+	    <textarea placeholder="Lots of walking, sight seeing..."></textarea>
 	  </div>
 	</form>
   </div>
