@@ -28,3 +28,11 @@
       </ul>
   <?php } ?>
 </div>
+
+<script>
+    function updateURL() {
+        window.history.pushState("object or string", "Title", "/search/turn-up");
+    }
+
+    updateURL();
+</script>
