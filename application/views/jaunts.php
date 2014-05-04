@@ -9,7 +9,7 @@
 		<?php foreach($jaunt as $row): ?>
 		<li class="table-view-cell media">
 			<a href="/places/<?= $row->id ?>" class="navigate-right">
-				<img class="media-object pull-left media-object--circle" src="http://placehold.it/42x42">
+				<img class="media-object pull-left media-object--circle" src="/webroot/img/ico_bar.svg">
 				<div class="media-body">
 					<?= $row->name ?>
 					<p><?= $row->note ?></p>
