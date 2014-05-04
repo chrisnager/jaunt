@@ -6,7 +6,6 @@
 			<a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a new list</a>
 		</div>
 	 </div>
-
 </div>
 <nav class="bar bar-tab">
 	<a class="tab-item active" href="#">
@@ -19,8 +18,9 @@
 
 <div id="add" class="modal">
   <header class="bar bar-nav">
+    <span class="icon icon-close pull-left btn-white"></span>
     <h1 class="title">Add a Jaunt</h1>
-    <button class="btn btn-outlined btn-white pull-right" href="#search">Next</button>
+    <button class="btn btn-outlined btn-teal pull-right" href="#search">Next</button>
   </header>
   <div class="content">
    	<form class="input-group">
@@ -46,6 +46,3 @@
 	</form>
   </div>
 </div>
-
-
-

@@ -29,6 +29,20 @@ body {
     color: white;
 }
 
+.btn-outlined.btn-teal {
+    border-color: #00CD8A;
+}
+
+.btn-teal {
+    color: #00CD8A;
+}
+
+.btn-outlined.btn-teal:active {
+    color: white;
+    background-color: #00CD8A;
+}
+
+
 
 
 
@@ -39,11 +53,11 @@ body {
    ========================================================================== */
 
 .bar {
-    background-color: #FFA634;
+    background-color: black;
 }
 
 .bar > .title {
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 
@@ -61,7 +75,7 @@ body {
 }
 
 .modal .content {
-  background: #eee;
+  background: #E5E8E3;
 }
 
 .page--index .logo {
