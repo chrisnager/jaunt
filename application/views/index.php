@@ -2,7 +2,7 @@
 	<img class="logo" src="/webroot/img/logo.svg">
 	<div class="content-padded">
 		<div class="hero">
-			<h1><i>Jaunt</i>, a list of awesome places in your city.</h1>
+			<h1><i>Jaunt.</i> Let your friends be your city guides	</h1>
 			<a class="btn  btn-white  btn-padded  btn-block  btn-outlined btn-pill"  href="#add" class="btn">Add a new Jaunt</a>
 		</div>
 	 </div>
