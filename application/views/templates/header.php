@@ -12,6 +12,8 @@
 
     <!-- Include the compiled Ratchet CSS -->
     <link href="/webroot/bower_components/ratchet/dist/css/ratchet.min.css" rel="stylesheet">
+    <link href="/webroot/bower_components/normalize.css/normalize.css" rel="stylesheet">
+    <link href="/webroot/css/app.css" rel="stylesheet">
 
     <!-- Include the compiled Ratchet JS -->
     <script src="/webroot/bower_components/ratchet/dist/js/ratchet.min.js"></script>
