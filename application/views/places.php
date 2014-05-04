@@ -3,6 +3,7 @@
 </header>
 <div class="content">
   <div class="content-padded">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $photo_references[0] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
     <?php foreach($place as $row): ?>
       <h4><?= $row->name ?></h4>
       <small><?= $response['result']['formatted_address'] ?></small>
