@@ -1,8 +1,11 @@
-
 <div class="content">
+	
 	<div class="content-padded">
-	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
-	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#" class="btn">Find a Jaunt</a>
+		<img class="logo" src="/webroot/img/logo.svg">
+		<div class="hero">
+			<h1>Jaunt, A list of awesome places in your city.</h1>
+		</div>
+	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a new list</a>
 	 </div>
 </div>
 
