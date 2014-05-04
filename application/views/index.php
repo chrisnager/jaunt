@@ -8,7 +8,7 @@
 
 <div id="add" class="modal">
   <header class="bar bar-nav">
-    <h1 class="title">New Jaunt</h1>
+    <h1 class="title">Add a Jaunt</h1>
     <a class="pull-right" href="#search"><span class="icon icon-right"></span></a>
   </header>
   <div class="content content--nobg">

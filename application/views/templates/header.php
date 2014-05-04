@@ -1,7 +1,7 @@
 <html class="page--<?= $this->uri->rsegment(2) ?>">
   <head>
     <meta charset="utf-8">
-    <title>Ratchet template page</title>
+    <title>Jaunt</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
