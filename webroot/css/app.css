@@ -1,4 +1,18 @@
 /* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
    Buttons
    ========================================================================== */
 
@@ -15,6 +29,20 @@
     color: white;
 }
 
+.btn-outlined.btn-teal {
+    border-color: #00CD8A;
+}
+
+.btn-teal {
+    color: #00CD8A;
+}
+
+.btn-outlined.btn-teal:active {
+    color: white;
+    background-color: #00CD8A;
+}
+
+
 
 
 
@@ -25,11 +53,11 @@
    ========================================================================== */
 
 .bar {
-    background-color: #FFA634;
+    background-color: black;
 }
 
 .bar > .title {
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 
@@ -42,12 +70,32 @@
    ========================================================================== */
 
 .page--index .content {
-    background: #663F1F url(/webroot/img/bridge.png) center center;
+    background: #663F1F url(/webroot/img/home.png) center center;
     background-size: cover;
 }
 
 .modal .content {
-  background: #FFF;
+  background: #E5E8E3;
+}
+
+.page--index .logo {
+  width: 40px;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  margin-left: -20px;
+  top: 20px;  
+}
+
+.hero {
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.hero h1 {
+  color: #FFF;
+  font-weight: 100;
+  font-size: 24px;
 }
 
 
@@ -55,8 +103,33 @@
 
 
 
+/* ==========================================================================
+   Inputs
+   ========================================================================== */
 
-.input-row input {
-  width: 100%;
-  padding: 20px;
+.input-group {
+    background-color: transparent;
+}
+
+.input-row {
+    height: 65px;
+    margin: 30px 0;
+    border-bottom: 0;
+    background-color: white;
+}
+
+.input-row input,
+.input-row textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.input-row-textarea {
+    height: 200px;
+}
+
+.input-row textarea {
+    min-height: 140px;
+    resize: none;
 }
