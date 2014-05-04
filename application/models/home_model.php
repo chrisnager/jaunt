@@ -14,10 +14,10 @@ Class Home_model extends CI_Model {
   }
   function getJaunt($id)
   {
-    $this->db->select('*');
+    $this->db->select('places.id, places.name, places.note, places.jaunt_id, jaunts.jaunt_name');
     $this->db->from('places','jaunts');
     $this->db->where('jaunts.id', $id);
-    $this->db->join('jaunts', 'jaunts.id = places.jaunt_id', 'left');
+    $this->db->join('jaunts', 'jaunts.id = places.jaunt_id', 'right');
 
     $query = $this->db->get();
     return $query->result();

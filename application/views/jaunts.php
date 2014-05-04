@@ -9,7 +9,7 @@
 	      <a class="navigate-right">
         <img class="media-object pull-left" src="http://placehold.it/42x42">
 	      <div class="media-body">
-	        <?= $row->name ?>
+	        <a href="/places/<?= $row->id ?>"><?= $row->name ?></a>
 	        <p><?= $row->note ?></p>
 	      </div>
 	    </a>
