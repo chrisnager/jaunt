@@ -44,7 +44,6 @@ $route['404_override'] = '';
 $route['places/(:num)'] = "home/places/$1";
 $route['search'] = "home/search";
 $route['search/(:any)'] = "home/search/$1";
-$route['add'] = "home/add";
 $route['permalink'] = "home/permalink";
 $route['jaunts/(:num)'] = "home/jaunts/$1";
 

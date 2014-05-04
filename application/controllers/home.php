@@ -57,17 +57,11 @@ class Home extends CI_Controller {
     
 		$this->load->view('templates/footer');
 	}
-	public function add() {
-
-		$this->load->view('templates/header');
-		$this->load->view('add');
-		$this->load->view('templates/footer');		
-	}
-
 
 	public function permalink() {
+    $data['jaunt'] = $this->home_model->getJaunt($id);
 		$this->load->view('templates/header');
-		$this->load->view('permalink');
+		$this->load->view('permalink', $data);
 		$this->load->view('templates/footer');
 	}
 
