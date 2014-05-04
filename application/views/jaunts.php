@@ -1,6 +1,8 @@
 <header class="bar bar-nav jaunt-bar">
-      <h1 class="title">Clints New York Trip</h1>
-      <a class="pull-right" href="/">Share</a>
+  <?php foreach($jaunt as $row): ?>
+    <h1 class="title"><?= $row->jaunt_name ?></h1>
+   <?php endforeach; ?>
+ <a class="pull-right" href="/">Share</a>
 </header>
 <div class="content">
 	<ul class="table-view">
