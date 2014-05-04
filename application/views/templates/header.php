@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>Jaunt</title>
+    <meta name="description" content="Let your friends be your city guides.">
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
