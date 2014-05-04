@@ -20,7 +20,7 @@
             <?php } ?>
             <div class="media-body">
               <?= $result['name'] ?>
-              <p><?= $result['formatted_address'] ?></p>
+              <p class="note"><?= $result['formatted_address'] ?></p>
             </div>
           </a>
         </li>
