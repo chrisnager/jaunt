@@ -1,9 +1,8 @@
 <header class="bar bar-nav">
-  <h1 class="title">jaunt</h1>
+    <h1 class="title">Jaunt</h1>
 </header>
 <div class="content">
-  <div class="content-padded">
-    <p>Main index page.</p>
-  </div>
+    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined" href="/create">Create a Jaunt</a>
+    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined" href="/find">Find a Jaunt</a>
 </div>
 
