@@ -1,6 +1,7 @@
 <header class="bar bar-nav jaunt-bar">
       <h1 class="title">New Jaunt</h1>
-      <a class="pull-right" href="/search">Next</a>
+      
+      <a href="#myModalexample" class="btn">Next</a>
 </header>
 <div class="content">
 	<form class="input-group">
