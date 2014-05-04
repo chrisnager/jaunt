@@ -3,35 +3,31 @@
         <img src="/webroot/img/home.png">
     </div>
     <div class="permalink-jaunt__name">
-    <?php foreach($jaunt as $row): ?>
-			<h1><?= $row->jaunt_name ?></h1>
-	<?php break; endforeach; ?>
-	<div class="name__person">
-		<img class="media-object pull-left media-object--circle" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-ash3/t1.0-9/1185556_10152172601436672_764383251_n.jpg">
-		<div class="media-body">
-			Clinton Halpin
+	    <?php foreach($jaunt as $row): ?>
+				<h1><?= $row->jaunt_name ?></h1>
+		<?php break; endforeach; ?>
+		<div class="name__person">
+			<img class="media-object pull-left media-object--circle" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-ash3/t1.0-9/1185556_10152172601436672_764383251_n.jpg">
+			<div class="media-body">
+				Clinton Halpin
+			</div>
 		</div>
 	</div>
-
-	</ul>
-	</div>
-	<h5 class="permalink-jaunt__explore">Explore</h5>
-	<ul class="table-view table-view--noborder">
-		<li class="table-view-cell media author-card">
+	<ul class="table-view">
+	<li class="table-view-cell media author-card">
 			<a>
 				<div class="media-body">
-
+					Explore
 					<p class="note">
-					<?php foreach($jaunt as $row): ?>
-        				<?= $row->description ?>
-					<?php break; endforeach; ?>
+						<?php foreach($jaunt as $row): ?>
+						<?= $row->description ?>
+						<?php break; endforeach; ?>
 					</p>
 				</div>
 			</a>
-		</li>
+	</li>
 	</ul>
 	
-
 	<ul class="table-view">
 		<?php foreach($jaunt as $row): ?>
 		<li class="table-view-cell media">

@@ -210,6 +210,17 @@ label {
   border: none;
 }
 
+.page--permalink .table-view:first-of-type {
+  background: #FFF;
+  z-index: 2000;
+  border-bottom: 1px solid #E5E8E3;
+}
+
+.page--permalink .table-view:first-of-type:before {
+  display: none;
+}
+
+
 .page--jaunts .table-view:before,
 .page--permalink .table-view:before {
   content: "";
@@ -240,6 +251,14 @@ label {
 
 .table-view .author-card a {
   background: #FFF;
+}
+
+.table-view-nobefore .table-view {
+  background: #FFF;
+}
+
+.table-view-nobefore:before {
+  display: none;
 }
 
 
@@ -319,6 +338,10 @@ label {
   top: 20px;
   left: 20px;
   color: #FFF;
+}
+
+.permalink-jaunt__summary {
+  background: #FFF;
 }
 
 .permalink-jaunt__name h1 {
