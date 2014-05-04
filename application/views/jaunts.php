@@ -3,7 +3,7 @@
 	<?php foreach($jaunt as $row): ?>
 	<h1 class="title"><?= $row->jaunt_name ?></h1>
 	<?php endforeach; ?>
-	<button class="btn btn-outlined btn-teal pull-right" href="/permalink/1">Share</button>
+	<a class="btn btn-outlined btn-teal pull-right" href="/permalink/1">Share</a>
 </header>
 <div class="content content--<?= $this->uri->rsegment(2) ?>">
 	<ul class="table-view">
