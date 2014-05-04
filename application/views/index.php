@@ -21,7 +21,6 @@
     <a href="/"><span class="icon icon-close pull-left btn-white"></span></a>
     <h1 class="title">Add a Jaunt</h1>
     <a href="/search"><span class="icon icon-right-nav pull-right"></span></a>
-    <!-- <button class="btn btn-outlined btn-teal pull-right" href="#search">Next</button> -->
   </header>
   <div class="content">
    	<form class="input-group">
@@ -32,19 +31,6 @@
 	  <label>Description</label>
 	  <div class="input-row input-row-textarea">
 	    <textarea placeholder="Lots of walking, sight seeing..."></textarea>
-	  </div>
-	</form>
-  </div>
-</div>
-
-<div id="search" class="modal">
-  <header class="bar bar-nav">
-    <h1 class="title">Find a place</h1>
-  </header>
-  <div class="content">
-   	<form class="input-group">
-	  <div class="input-row input-row-search">
-	    <input type="text" placeholder="Search places…">
 	  </div>
 	</form>
   </div>
