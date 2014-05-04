@@ -11,7 +11,7 @@
 
 <div id="add" class="modal">
   <header class="bar bar-nav">
-    <h1 class="title">Name Your Jaunt</h1>
+    <h1 class="title">Add a Jaunt</h1>
   </header>
   <div class="content content--nobg">
    	<form class="input-group">
