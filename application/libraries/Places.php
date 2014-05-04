@@ -13,6 +13,18 @@ Class Places {
 
         return json_decode($result, true);
     }
+
+    public function getPhoto($reference)
+    {
+        $url = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference='.$reference.'&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I';
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return $result;
+    }
 }
 
 /* End of file Places.php */
