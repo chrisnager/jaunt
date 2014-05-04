@@ -291,9 +291,10 @@ label {
 
 
 /* ==========================================================================
-   Places
+   Places and Permalink
    ========================================================================== */
 
+.permalink-jaunt__image,
 .place__image {
     height: 180px;
     margin-bottom: -70px;
@@ -301,7 +302,9 @@ label {
     background-image: linear-gradient(gold, orangered);
 }
 
+.permalink-jaunt__image > img,
 .place__image > img {
+    width: 100%;
     opacity: 0.3;
 }
 
