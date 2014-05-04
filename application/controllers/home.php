@@ -48,12 +48,6 @@ class Home extends CI_Controller {
 		$this->load->view('add');
 		$this->load->view('templates/footer');		
 	}
-	public function place() {
-		$this->load->view('templates/header');
-		$this->load->view('templates/page-title');
-		$this->load->view('place');
-		$this->load->view('templates/footer');
-	}
 	public function permalink() {
 		$this->load->view('templates/header');
 		$this->load->view('templates/page-title');
