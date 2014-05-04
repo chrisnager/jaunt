@@ -24,7 +24,9 @@
 	    <input type="email" placeholder="">
 	  </div>
 	</form>
-	<a data-transition="slide-in" href="#search" class="btn btn-block">Next</a>
+    <div class="content-padded">
+	    <a data-transition="slide-in" href="#search" class="btn btn-block">Next</a>
+    </div>
   </div>
 </div>
 
