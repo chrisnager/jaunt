@@ -58,6 +58,7 @@ body {
    ========================================================================== */
 
 .bar {
+    border-bottom: 0;
     background-color: black;
 }
 
@@ -158,4 +159,46 @@ body {
 
 .input-row-search {
     margin-top: 0;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Places
+   ========================================================================== */
+
+
+
+.place__image {
+    height: 180px;
+    margin-bottom: -70px;
+    overflow: hidden;
+    background-image: linear-gradient(gold, orangered);
+}
+
+.place__image > img {
+    opacity: 0.3;
+}
+
+.place__info {
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.place__title,
+.place__address {
+    margin: 0;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.place__address {
+    margin-bottom: 25px;
 }
