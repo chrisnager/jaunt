@@ -47,6 +47,7 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');		
 	}
 
+
 	public function permalink() {
 		$this->load->view('templates/header');
 		$this->load->view('permalink');

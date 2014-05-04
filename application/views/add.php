@@ -3,15 +3,15 @@
       <a class="pull-right" href="/search">Next</a>
 </header>
 <div class="content">
-<form class="input-group">
-  <div class="input-row">
-    <label>Name</label>
-    <input type="text" placeholder="">
-  </div>
-  <div class="input-row">
-    <label>Description</label>
-    <input type="email" placeholder="">
-  </div>
-</form>
+	<form class="input-group">
+	  <div class="input-row">
+	    <label>Name</label>
+	    <input type="text" placeholder="">
+	  </div>
+	  <div class="input-row">
+	    <label>Description</label>
+	    <input type="email" placeholder="">
+	  </div>
+	</form>
 </div>
 

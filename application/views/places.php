@@ -3,7 +3,9 @@
 </header>
 <div class="content">
   <div class="content-padded">
-    <p><?= $id ?> is the id of this place.</p>
+  <?php foreach($place as $row): ?>
+  <h4><?= $row->name ?></h4>
+  <?php endforeach; ?>
   </div>
 </div>
 
