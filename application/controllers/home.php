@@ -27,7 +27,7 @@ class Home extends CI_Controller {
 	public function places($id)
 	{
 		$data['id'] = $id;
-		$data['place'] = $this->home_model->getPlaces($id);
+		$data['place'] = $this->home_model->getPlace($id);
 
 		$this->load->view('templates/header');
 		$this->load->view('places', $data);
@@ -54,9 +54,11 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function jaunt() {
+	public function jaunts($id) {
+    $data['jaunt'] = $this->home_model->getJaunt($id);
+    
 		$this->load->view('templates/header');
-		$this->load->view('jaunt');
+		$this->load->view('jaunts', $data);
 		$this->load->view('templates/footer');
 	}
 
