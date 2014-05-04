@@ -2,13 +2,13 @@
 	<img class="logo" src="/webroot/img/logo.svg">
 	<div class="content-padded">
 		<div class="hero">
-			<h1><i>Jaunt</i>, A list of awesome places in your city.</h1>
-			<a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a new list</a>
+			<h1><i>Jaunt</i>, a list of awesome places in your city.</h1>
+			<a class="btn  btn-white  btn-padded  btn-block  btn-outlined btn-pill"  href="#add" class="btn">Add a new Jaunt</a>
 		</div>
 	 </div>
 </div>
-<nav class="bar bar-tab">
-	<a class="tab-item active" href="#">
+<nav class="bar bar-tab bar-tab--transparent">
+	<a class="tab-item" href="#">
 		<span class="tab-label">Login</span>
 	</a>
 	<a class="tab-item" href="#">
