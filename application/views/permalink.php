@@ -1,11 +1,16 @@
 <header class="bar bar-nav jaunt-bar">
 	<?php foreach($jaunt as $row): ?>
 	<h1 class="title"><?= $row->jaunt_name ?></h1>
-	<?php endforeach; ?>
+	<?php break; endforeach; ?>
 </header>
 <div class="content">
-    <div class="jaunt__description">
-    <?php var_dump($jaunt['description']) ?>
+    <div class="permalink-jaunt__image">
+        <img src="/webroot/img/home.png">
+    </div>
+    <div class="permalink-jaunt__description">
+	<?php foreach($jaunt as $row): ?>
+        <?= $row->description ?>
+	<?php break; endforeach; ?>
     </div>
 	<ul class="table-view">
 		<?php foreach($jaunt as $row): ?>
