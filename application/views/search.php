@@ -12,7 +12,7 @@
       <ul class="search-results table-view">
       <?php foreach ($response['results'] as $result): ?> 
         <li class="search-results__item table-view-cell media">
-          <a href="/places/1" class="navigate-right">
+          <a href="/jaunts/1" class="navigate-right">
             <?php if(isset($result['photos'])) { ?>
             <img class="media-object pull-left media-object--circle" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $result['photos'][0]['photo_reference'] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
             <?php } else { ?>
