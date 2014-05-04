@@ -1,4 +1,26 @@
 /* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn-outlined.btn-white {
+    border-color: white;
+}
+
+.btn-white {
+    color: white;
+}
+
+.btn-padded {
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+
+
+
+
+
+/* ==========================================================================
    Header bar
    ========================================================================== */
 
@@ -8,4 +30,19 @@
 
 .bar > .title {
     color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Index page
+   ========================================================================== */
+
+.page--index .content {
+    background: #663F1F url(http://31.media.tumblr.com/a0d6500fa274340eca0eb0c125c18228/tumblr_n4cmkfHsMO1st5lhmo1_1280.jpg) center center;
+    background-image: url(http://24.media.tumblr.com/f74ff1d9acdf8c43cd1897e01bc669e6/tumblr_n2k114hDQX1st5lhmo1_1280.jpg);
+    background-size: cover;
 }

@@ -1,14 +1,10 @@
+<header class="bar bar-nav jaunt-bar">
+      <a class="pull-left" href="/add">Cancel</a>
+      <h1 class="title">Add a Place</h1>
+</header>
 <div class="content">
-Search
-
-  <ul>
-    <li><a href="/places/1">places</a></li>
-    <li><a href="/search/1">search</a></li>
-    <li><a href="/add/1">add/1</a></li>
-    <li><a href="/place/1">place/1</a></li>
-    <li><a href="/permalink/1">permalink</a></li>
-    <li><a href="/jaunt/1">jaunt/1</a></li>
-  </ul>
+<form>
+    <input type="text" placeholder="Search">
+</form>
 </div>
-
 
