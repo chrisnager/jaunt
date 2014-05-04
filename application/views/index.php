@@ -3,7 +3,6 @@
 </header>
 <div class="content">
     <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
-    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined" href="/find">Find a Jaunt</a>
 </div>
 
 
@@ -23,6 +22,14 @@
 	  </div>
 	</form>
 	<a data-transition="slide-in" href="#search" class="btn btn-block">Next</a>
+  </div>
+   <div class="content content--nobg">
+   	<form class="input-group">
+	  <div class="input-row">
+	    <input type="text" placeholder="Search">
+	  </div>
+	</form>
+	<a data-transition="slide-in" href="/jaunt" class="btn btn-block">Add</a>
   </div>
 </div>
 
