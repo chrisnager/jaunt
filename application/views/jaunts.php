@@ -9,7 +9,7 @@
 	<ul class="table-view">
 		<li class="table-view-cell media author-card">
 			<a>
-				<img class="media-object pull-left media-object--circle" src="/webroot/img/author.svg">
+				<img class="media-object pull-left media-object--circle" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-ash3/t1.0-9/1185556_10152172601436672_764383251_n.jpg">
 				<div class="media-body">
 					Clinton Halpin
 					<p class="note">Bring your walking shoes. These are the best bars and sights in Downtown BKLYN!</p>
@@ -19,12 +19,11 @@
 		<?php foreach($jaunt as $row): ?>
 		<li class="table-view-cell media">
 			<a href="/places/<?= $row->id ?>" class="navigate-right">
-				<!-- <img class="media-object pull-left media-object--circle" src="/webroot/img/ico_bar.svg"> -->
-				<?php if(isset($result['photos'])) { ?>
-				<img class="media-object pull-left media-object--circle" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $result['photos'][0]['photo_reference'] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
-				<?php } else { ?>
-				<img class="media-object pull-left media-object--circle" src="/apple-touch-icon-precomposed.png">
-				<?php } ?>
+					<?php if(isset($photo_references[0])) { ?> 
+	                <img class="media-object pull-left media-object--circle" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $photo_references[0] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
+					<?php } else { ?>
+					<img class="media-object pull-left media-object--circle" src="/apple-touch-icon-precomposed.png">
+					<?php } ?>
 				<div class="media-body">
 					<?= $row->name ?>
 					<p class="note"><img src="/webroot/img/ico_location.svg"><?= $row->note ?></p>
@@ -36,7 +35,7 @@
 			<a href="/search" class="add-jaunt" data-transition="slide-in" href="/search">
 				<div class="media-body">
 					<span class="icon icon-plus"></span>
-					Add New Jaunt
+					Add New Place
 				</div>
 			</a>
 		</li>

@@ -231,12 +231,13 @@ label {
 }
 
 .page--jaunts  .table-view-cell > a.add-jaunt {
-  color: #00CD8A;
+  color: #000;
 }
 
 
 .page--jaunts .media-body {
   font-weight: 900;
+  font-size: .9em;
 }
 
 .page--jaunts .media-body .note {
@@ -256,6 +257,10 @@ label {
   background: #FFF;
 }
 
+
+.table-view-cell.author-card  {
+  padding-right: 45px;
+}
 
 
 .author-card .media-object--circle {
