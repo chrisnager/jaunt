@@ -2,7 +2,10 @@
     <h1 class="title">Jaunt</h1>
 </header>
 <div class="content">
-    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
+	<div class="content-padded">
+	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
+	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a Jaunt</a>
+	 </div>
 </div>
 
 
@@ -25,7 +28,7 @@
 
 <div id="search" class="modal">
   <header class="bar bar-nav">
-    <h1 class="title">Search</h1>
+    <h1 class="title">New Location</h1>
   </header>
   <div class="content content--nobg">
    	<form class="input-group">
@@ -33,7 +36,6 @@
 	    <input type="text" placeholder="Search">
 	  </div>
 	</form>
-	<a data-transition="slide-in" href="/jaunts" class="btn btn-block">Add</a>
   </div>
 </div>
 
