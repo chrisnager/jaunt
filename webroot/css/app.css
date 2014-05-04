@@ -45,3 +45,7 @@
     background: #663F1F url(/webroot/img/bridge.png) center center;
     background-size: cover;
 }
+
+.modal .content {
+  background: #FFF;
+}
