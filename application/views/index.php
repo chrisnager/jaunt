@@ -12,7 +12,7 @@
 <div id="add" class="modal">
   <header class="bar bar-nav">
     <h1 class="title">Add a Jaunt</h1>
-    <a class="pull-right" href="#search"><span class="icon icon-right"></span></a>
+    <a class="pull-right" href="#search"><span>Next</span></a>
   </header>
   <div class="content content--nobg">
    	<form class="input-group">

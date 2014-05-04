@@ -45,7 +45,7 @@ $route['places/(:num)'] = "home/places/$1";
 $route['search'] = "home/search/";
 $route['add'] = "home/add";
 $route['permalink'] = "home/permalink";
-$route['jaunt'] = "home/jaunt";
+$route['jaunts/(:num)'] = "home/jaunts/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
