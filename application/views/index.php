@@ -10,14 +10,16 @@
 <div id="add" class="modal">
   <header class="bar bar-nav">
     <h1 class="title">Add a Jaunt</h1>
-    <a class="pull-right" href="#search"><span>Next</span></a>
+    <button class="btn btn-outlined btn-white pull-right" href="#search">Next</button>
   </header>
-  <div class="content content--nobg">
+  <div class="content">
    	<form class="input-group">
 	  <div class="input-row">
-	    <input type="text" placeholder="Name your place...">
+	    <input type="text" placeholder="Name your place…">
 	  </div>
+	  <div class="input-row input-row-textarea">
 	    <textarea placeholder="Description"></textarea>
+	  </div>
 	</form>
   </div>
 </div>
@@ -26,7 +28,7 @@
   <header class="bar bar-nav">
     <h1 class="title">New Location</h1>
   </header>
-  <div class="content content--nobg">
+  <div class="content">
    	<form class="input-group">
 	  <div class="input-row">
 	    <input type="text" placeholder="Search">

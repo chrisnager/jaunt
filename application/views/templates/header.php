@@ -14,6 +14,7 @@
     <link href="/webroot/bower_components/ratchet/dist/css/ratchet.min.css" rel="stylesheet">
     <link href="/webroot/bower_components/normalize.css/normalize.css" rel="stylesheet">
     <link href="/webroot/css/app.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet'>
 
     <!-- Include the compiled Ratchet JS -->
     <script src="/webroot/bower_components/jquery/dist/jquery.min.js"></script>

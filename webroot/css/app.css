@@ -1,4 +1,18 @@
 /* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
    Buttons
    ========================================================================== */
 
@@ -47,7 +61,7 @@
 }
 
 .modal .content {
-  background: #FFF;
+  background: #eee;
 }
 
 
@@ -55,8 +69,33 @@
 
 
 
+/* ==========================================================================
+   Inputs
+   ========================================================================== */
 
-.input-row input {
-  width: 100%;
-  padding: 20px;
+.input-group {
+    background-color: transparent;
+}
+
+.input-row {
+    height: 65px;
+    margin: 30px 0;
+    border-bottom: 0;
+    background-color: white;
+}
+
+.input-row input,
+.input-row textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.input-row-textarea {
+    height: 200px;
+}
+
+.input-row textarea {
+    min-height: 140px;
+    resize: none;
 }
