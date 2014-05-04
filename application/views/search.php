@@ -2,7 +2,7 @@
       <a class="pull-left" href="/jaunts"><span class="icon icon-left-nav"></span></a>
       <h1 class="title">Add a Place</h1>
 </header>
-<div class="content">
+<div class="content content--<?= $this->uri->rsegment(2) ?>">
 <form class="input-group" id="search">
   <div class="input-row input-row-search">
     <input type="text" name="query" placeholder="Search for a location…">

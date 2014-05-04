@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content content--<?= $this->uri->rsegment(2) ?>">
     <div class="permalink-jaunt__image">
         <img src="/webroot/img/home.png">
     </div>
