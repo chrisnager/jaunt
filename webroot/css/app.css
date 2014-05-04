@@ -67,6 +67,7 @@ a {
    ========================================================================== */
 
 .bar {
+    border-bottom: 0;
     background-color: black;
 }
 
@@ -177,6 +178,7 @@ a {
 /* ==========================================================================
    Page Jaunts
    ========================================================================== */
+
 .page--jaunts .table-view {
   background: transparent;
   border: none;
@@ -221,6 +223,7 @@ a {
 /* ==========================================================================
    Circle List
    ========================================================================== */
+
 .table-view .media-object.pull-left {
   margin-right: 20px;
 }
@@ -228,3 +231,43 @@ a {
 .media-object--circle {
   border-radius: 5em;
 }
+
+
+
+
+
+
+/* ==========================================================================
+   Places
+   ========================================================================== */
+
+.place__image {
+    height: 180px;
+    margin-bottom: -70px;
+    overflow: hidden;
+    background-image: linear-gradient(gold, orangered);
+}
+
+.place__image > img {
+    opacity: 0.3;
+}
+
+.place__info {
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.place__title,
+.place__address {
+    margin: 0;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.place__address {
+    margin-bottom: 25px;
+}
+
