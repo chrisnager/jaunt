@@ -6,6 +6,15 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+a {
+  color: #00CD8A;
+}
+
+.title {
+  font-size: .8em;
+  font-weight: 100;
+}
+
 
 
 
@@ -58,6 +67,7 @@ body {
    ========================================================================== */
 
 .bar {
+    border-bottom: 0;
     background-color: black;
 }
 
@@ -94,7 +104,8 @@ body {
     background-size: cover;
 }
 
-.modal .content {
+.modal .content,
+.page--jaunts .content {
   background: #E5E8E3;
 }
 
@@ -155,3 +166,108 @@ body {
     min-height: 140px;
     resize: none;
 }
+
+.input-row-search {
+    margin-top: 0;
+}
+
+
+
+
+
+/* ==========================================================================
+   Page Jaunts
+   ========================================================================== */
+
+.page--jaunts .table-view {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.page--jaunts .table-view-cell {
+  border: none;
+}
+
+.page--jaunts .table-view:before {
+  content: "";
+  position: absolute;
+  left: 33px;
+  background: rgba(0,0,0,.1);
+  top: 20px;
+  height: 100%;
+  width: 5px;
+}
+
+.page--jaunts .add-jaunt span {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #00CD8A;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5em;
+  line-height: 42px;
+  margin-right: 15px;
+  color: #00CD8A;
+}
+
+.page--jaunts  .table-view-cell > a.add-jaunt {
+  color: #00CD8A;
+  background: #E5E8E3;
+}
+
+
+
+
+
+/* ==========================================================================
+   Circle List
+   ========================================================================== */
+
+.table-view .media-object.pull-left {
+  margin-right: 20px;
+}
+
+.media-object--circle {
+  border-radius: 5em;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Places
+   ========================================================================== */
+
+.place__image {
+    height: 180px;
+    margin-bottom: -70px;
+    overflow: hidden;
+    background-image: linear-gradient(gold, orangered);
+}
+
+.place__image > img {
+    opacity: 0.3;
+}
+
+.place__info {
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.place__title,
+.place__address {
+    margin: 0;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.place__address {
+    margin-bottom: 25px;
+}
+

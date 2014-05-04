@@ -2,16 +2,19 @@
   <h1 class="title">jaunt</h1>
 </header>
 <div class="content">
-  <div class="content-padded">
-    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $photo_references[0] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
     <?php foreach($place as $row): ?>
-      <h4><?= $row->name ?></h4>
-      <small><?= $response['result']['formatted_address'] ?></small>
-      <?php if (isset($response['result']['website'])) { ?>
-        <a href="<?= $response['result']['website'] ?>" target="_blank"><?= $response['result']['website'] ?></a>
-      <?php } ?>
-      <p><?= $row->note ?></p>
+      <div class="place">
+          <div class="place__image">
+            <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $photo_references[0] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
+          </div>
+          <div class="place__info content-padded">
+              <h3 class="place__title"><?= $row->name ?></h3>
+              <p class="place__address"><small><?= $response['result']['formatted_address'] ?></small></p>
+              <?php if (isset($response['result']['website'])) { ?>
+                <p class="place__site"><a href="<?= $response['result']['website'] ?>" target="_blank"><?= $response['result']['website'] ?></a></p>
+              <?php } ?>
+              <p class="place__note"><?= $row->note ?></p>
+          </div>
+      </div>
     <?php endforeach; ?>
-  </div>
 </div>
-
