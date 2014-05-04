@@ -141,6 +141,7 @@ a {
    ========================================================================== */
 
 .input-group {
+    margin-bottom: 0;
     background-color: transparent;
 }
 
@@ -169,6 +170,7 @@ a {
 
 .input-row-search {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
