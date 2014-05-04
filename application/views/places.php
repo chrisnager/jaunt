@@ -1,5 +1,5 @@
 <header class="bar bar-nav">
-  <h1 class="title">jaunt</h1>
+  <h1 class="title">Jaunt</h1>
 </header>
 <div class="content">
     <?php foreach($place as $row): ?>
@@ -13,7 +13,11 @@
               <?php if (isset($response['result']['website'])) { ?>
                 <p class="place__site"><a href="<?= $response['result']['website'] ?>" target="_blank"><?= $response['result']['website'] ?></a></p>
               <?php } ?>
-              <p class="place__note"><?= $row->note ?></p>
+                <form class="input-group">
+                  <div class="input-row input-row-textarea">
+                    <textarea class="place__note" placeholder="Add a note about this place…"><?= $row->note ?></textarea>
+                  </div>
+                </form>
           </div>
       </div>
     <?php endforeach; ?>
