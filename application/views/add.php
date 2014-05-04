@@ -1,14 +1,17 @@
+<header class="bar bar-nav jaunt-bar">
+      <h1 class="title">New Jaunt</h1>
+      <a class="pull-right" href="/search">Next</a>
+</header>
 <div class="content">
-Add
-
-  <ul>
-		<li><a href="/places/1">places</a></li>
-		<li><a href="/search/">search</a></li>
-		<li><a href="/add/">add/1</a></li>
-		<li><a href="/place/">place/1</a></li>
-		<li><a href="/permalink/">permalink</a></li>
-		<li><a href="/jaunt/">jaunt/1</a></li>
-	</ul>
+<form class="input-group">
+  <div class="input-row">
+    <label>Name</label>
+    <input type="text" placeholder="">
+  </div>
+  <div class="input-row">
+    <label>Description</label>
+    <input type="email" placeholder="">
+  </div>
+</form>
 </div>
-
 

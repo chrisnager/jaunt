@@ -37,27 +37,25 @@ class Home extends CI_Controller {
 	public function search()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('templates/page-title');
 		$this->load->view('search');
 		$this->load->view('templates/footer');
 	}
 	public function add() {
 
 		$this->load->view('templates/header');
-		$this->load->view('templates/page-title');
 		$this->load->view('add');
 		$this->load->view('templates/footer');		
 	}
-	public function place() {
-		$this->load->view('templates/header');
-		$this->load->view('templates/page-title');
-		$this->load->view('place');
-		$this->load->view('templates/footer');
-	}
+
 	public function permalink() {
 		$this->load->view('templates/header');
-		$this->load->view('templates/page-title');
 		$this->load->view('permalink');
+		$this->load->view('templates/footer');
+	}
+
+	public function jaunt() {
+		$this->load->view('templates/header');
+		$this->load->view('jaunt');
 		$this->load->view('templates/footer');
 	}
 
