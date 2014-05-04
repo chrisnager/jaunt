@@ -29,7 +29,7 @@
 	    <input type="text" placeholder="Search">
 	  </div>
 	</form>
-	<a data-transition="slide-in" href="/jaunt" class="btn btn-block">Add</a>
+	
   </div>
 </div>
 
