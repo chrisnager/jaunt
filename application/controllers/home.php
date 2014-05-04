@@ -27,7 +27,7 @@ class Home extends CI_Controller {
 	public function places($id)
 	{
 		$data['id'] = $id;
-    $data['place'] = $this->home_model->getPlaces($id);
+		$data['place'] = $this->home_model->getPlaces($id);
 
 		$this->load->view('templates/header');
 		$this->load->view('places', $data);
@@ -41,6 +41,28 @@ class Home extends CI_Controller {
 		$this->load->view('search');
 		$this->load->view('templates/footer');
 	}
+	public function add() {
+
+		$this->load->view('templates/header');
+		$this->load->view('templates/page-title');
+		$this->load->view('add');
+		$this->load->view('templates/footer');		
+	}
+	public function place() {
+		$this->load->view('templates/header');
+		$this->load->view('templates/page-title');
+		$this->load->view('place');
+		$this->load->view('templates/footer');
+	}
+	public function permalink() {
+		$this->load->view('templates/header');
+		$this->load->view('templates/page-title');
+		$this->load->view('permalink');
+		$this->load->view('templates/footer');
+	}
+
+
+
 
 }
 
