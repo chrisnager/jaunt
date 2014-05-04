@@ -42,7 +42,11 @@ $route['default_controller'] = "home";
 $route['404_override'] = '';
 
 $route['places/(:num)'] = "home/places/$1";
-$route['search/(:num)'] = "home/search/$1";
+$route['search'] = "home/search/";
+$route['add'] = "home/add";
+$route['place'] = "home/place";
+$route['permalink'] = "home/permalink";
+$route['jaunt'] = "home/jaunt";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

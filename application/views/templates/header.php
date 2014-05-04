@@ -1,4 +1,4 @@
-<html>
+<html class="page--<?= $this->uri->rsegment(2) ?>">
   <head>
     <meta charset="utf-8">
     <title>Ratchet template page</title>
