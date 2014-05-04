@@ -36,12 +36,12 @@
 
 <div id="search" class="modal">
   <header class="bar bar-nav">
-    <h1 class="title">New Location</h1>
+    <h1 class="title">Find a place</h1>
   </header>
   <div class="content">
    	<form class="input-group">
-	  <div class="input-row">
-	    <input type="text" placeholder="Search">
+	  <div class="input-row input-row-search">
+	    <input type="text" placeholder="Search places…">
 	  </div>
 	</form>
   </div>

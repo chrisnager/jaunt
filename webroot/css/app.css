@@ -133,3 +133,7 @@ body {
     min-height: 140px;
     resize: none;
 }
+
+.input-row-search {
+    margin-top: 0;
+}
