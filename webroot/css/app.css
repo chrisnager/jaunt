@@ -192,22 +192,26 @@ label {
    Page Jaunts
    ========================================================================== */
 
-.page--jaunts .bar .icon {
+.page--jaunts .bar .icon,
+.page--permalink .bar .icon {
   color: white;
   margin-left: 14px;
 }
 
-.page--jaunts .table-view {
+.page--jaunts .table-view,
+.page--permalink .table-view {
   background: transparent;
   border: none;
   position: relative;
 }
 
-.page--jaunts .table-view-cell {
+.page--jaunts .table-view-cell,
+.page--permalink .table-view-cell {
   border: none;
 }
 
-.page--jaunts .table-view:before {
+.page--jaunts .table-view:before,
+.page--permalink .table-view:before {
   content: "";
   position: absolute;
   left: 35px;
@@ -234,27 +238,13 @@ label {
   color: #000;
 }
 
-
-.page--jaunts .media-body {
-  font-weight: 900;
-  font-size: .9em;
-}
-
-.page--jaunts .media-body .note {
-  font-weight: 100;
-  color: #000;
-}
-
-.page--jaunts .media-body .note img {
-  width: 12px;
-  height: 12px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-
 .table-view .author-card a {
   background: #FFF;
+}
+
+
+.table-view--noborder {
+  border-bottom: none;
 }
 
 
@@ -291,6 +281,24 @@ label {
 }
 
 
+.media-body {
+  font-weight: 900;
+  font-size: .9em;
+}
+
+.media-body .note {
+  font-weight: 100;
+  color: #000;
+}
+
+.media-body .note img {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
 
 
 
@@ -301,10 +309,30 @@ label {
 
 .permalink-jaunt__image,
 .place__image {
-    height: 180px;
-    margin-bottom: -70px;
+    height: 270px;
     overflow: hidden;
     background-image: linear-gradient(gold, orangered);
+}
+
+.permalink-jaunt__name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #FFF;
+}
+
+.permalink-jaunt__name h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.name__person .media-body {
+  color: #FFF;
+  vertical-align: middle;
+  line-height: 42px;
+  margin-left: 40px;
+  padding-left: 13px;
+  font-weight: 100;
 }
 
 .permalink-jaunt__image > img,
@@ -332,3 +360,7 @@ label {
     margin-bottom: 25px;
 }
 
+.permalink-jaunt__explore {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}

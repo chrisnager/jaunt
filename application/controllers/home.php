@@ -60,6 +60,21 @@ class Home extends CI_Controller {
 
 	public function permalink($id) {
     $data['jaunt'] = $this->home_model->getJaunt($id);
+    $data['id'] = $id;
+	$data['place'] = $this->home_model->getPlace($id);
+    $data['photo_references'] = array();
+   
+    // Get basic places data from API
+    $this->load->library('places');
+    foreach ($data['place'] as $row) {
+      $data['reference'] = $row->reference;
+    }
+    $data['response'] = $this->places->getPlaceData($data['reference']);
+
+    // Use places reference to get photo references
+    foreach ($data['response']['result']['photos'] as $photo) {
+      array_push($data['photo_references'], $photo['photo_reference']);
+    }
 		$this->load->view('templates/header');
 		$this->load->view('permalink', $data);
 		$this->load->view('templates/footer');

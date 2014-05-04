@@ -3,7 +3,7 @@
 	<?php foreach($jaunt as $row): ?>
 	<h1 class="title"><?= $row->jaunt_name ?></h1>
 	<?php endforeach; ?>
-	<button class="btn btn-outlined btn-teal pull-right" href="#">Share</button>
+	<button class="btn btn-outlined btn-teal pull-right" href="/permalink/1">Share</button>
 </header>
 <div class="content">
 	<ul class="table-view">
