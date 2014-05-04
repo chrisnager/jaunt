@@ -46,10 +46,15 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function search()
+	public function search($query = null)
 	{
+    if ($query !== null) {
+      $this->load->library('places');
+      $data['response'] = $this->places->search($query);
+    }
 		$this->load->view('templates/header');
-		$this->load->view('search');
+		$this->load->view('search', $data);
+    
 		$this->load->view('templates/footer');
 	}
 	public function add() {

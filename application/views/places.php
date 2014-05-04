@@ -5,7 +5,9 @@
     <?php foreach($place as $row): ?>
       <div class="place">
           <div class="place__image">
-            <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $photo_references[0] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
+            <?php if(isset($photo_references[0])) { ?> 
+              <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=640&photoreference=<?= $photo_references[0] ?>&sensor=true&key=AIzaSyCsjrmFW0bjXRJfRaLZdukRmkxTKUxzT3I">
+            <?php } ?>
           </div>
           <div class="place__info content-padded">
               <h3 class="place__title"><?= $row->name ?></h3>
