@@ -5,6 +5,7 @@
   <div class="content-padded">
   <?php foreach($place as $row): ?>
   <h4><?= $row->name ?></h4>
+  <p><?= $row->note ?></p>
   <?php endforeach; ?>
   </div>
 </div>
