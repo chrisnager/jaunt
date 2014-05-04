@@ -28,7 +28,12 @@ class Home extends CI_Controller {
 	{
 		$data['id'] = $id;
 		$data['place'] = $this->home_model->getPlace($id);
-
+    
+    $this->load->library('places');
+    foreach ($data['place'] as $row) {
+      $data['reference'] = $row->reference;
+    }
+    $data['response'] = $this->places->getPlaceData($data['reference']);
 		$this->load->view('templates/header');
 		$this->load->view('places', $data);
 		$this->load->view('templates/footer');
