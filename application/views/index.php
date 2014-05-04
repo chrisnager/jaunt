@@ -1,14 +1,21 @@
 <div class="content">
-	
+	<img class="logo" src="/webroot/img/logo.svg">
 	<div class="content-padded">
-		<img class="logo" src="/webroot/img/logo.svg">
 		<div class="hero">
-			<h1>Jaunt, A list of awesome places in your city.</h1>
+			<h1><i>Jaunt</i>, A list of awesome places in your city.</h1>
+			<a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a new list</a>
 		</div>
-	    <a class="btn  btn-white  btn-padded  btn-block  btn-outlined"  href="#add" class="btn">Create a new list</a>
 	 </div>
-</div>
 
+</div>
+<nav class="bar bar-tab">
+	<a class="tab-item active" href="#">
+		<span class="tab-label">Login</span>
+	</a>
+	<a class="tab-item" href="#">
+		<span class="tab-label">Sign Up</span>
+	</a>
+</nav>
 
 <div id="add" class="modal">
   <header class="bar bar-nav">
