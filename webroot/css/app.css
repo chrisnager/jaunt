@@ -110,7 +110,7 @@ a {
 }
 
 .modal .content,
-.content--search,
+.page--index .content--search,
 .content--permalink,
 .content--jaunts {
   background: #E5E8E3;
