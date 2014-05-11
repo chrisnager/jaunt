@@ -1,0 +1,34 @@
+<ons-navigator title="Sign Up" right-button-icon="fa fa-lg fa-times" on-right-button-click="ons.screen.dismissPage()">
+    <ons-page style="padding : 8px">
+        <ons-text-input 
+            ng-model="name"
+            placeholder="Name..." 
+            style="display: block; width: 100%">
+        </ons-text-input>
+        <br />
+        <ons-text-input 
+            ng-model="email"
+            placeholder="Email..." 
+            style="display: block; width: 100%">
+        </ons-text-input>
+        <br />
+        <ons-text-input 
+            ng-model="password"
+            placeholder="Password" 
+            style="display: block; width: 100%">
+        </ons-text-input>
+        <br />
+        <ons-text-input 
+            ng-model="confirmpassword"
+            placeholder="Confirm Password" 
+            style="display: block; width: 100%">
+        </ons-text-input>
+        <br />
+        <ons-button 
+            type="cta-large" 
+            style="display: block; width: 100%; margin-top: 8px;"
+            page="/list.html">
+            Sign Up
+        </ons-button>
+    </ons-page>
+</ons-navigator>
