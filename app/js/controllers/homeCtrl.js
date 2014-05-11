@@ -2,9 +2,9 @@
 
 var jauntAppControllers = angular.module('jauntAppControllers', []);
 
-jauntAppControllers.controller('mainCtrl', ['$scope', 
+jauntAppControllers.controller('homeCtrl', ['$scope', 
   function($scope) {
-    console.log('mainCtrl');
+    console.log('homeCtrl');
 }]);
 
 

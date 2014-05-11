@@ -1,8 +1,8 @@
 'use strict';
 
-jauntAppControllers.controller('jauntListCtrl', ['$scope', 
+jauntAppControllers.controller('listCtrl', ['$scope', 
   function($scope) {
-    console.log('jauntListCtrl');
+    console.log('listCtrl');
 
     $scope.username = "clintonhalpin";
 	$scope.displayName = "Clinton Halpin";

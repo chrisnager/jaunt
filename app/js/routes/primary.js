@@ -5,21 +5,30 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/jaunt");
 
   $stateProvider
-      .state('jaunt', {
+      .state('Home', {
         url: '/jaunt',
         views: {
           'main': {
               templateUrl: 'html/views/main.html',
-              controller: 'mainCtrl',
+              controller: 'homeCtrl',
           }
         }
       }) 
-      .state('jauntList', {
+      .state('List', {
         url: '/jaunt/list',
         views: {
           'main': {
               templateUrl: 'html/views/list.html',
-              controller: 'jauntListCtrl',
+              controller: 'listCtrl',
+          }
+        }
+      })  
+      .state('Search', {
+        url: '/jaunt/list',
+        views: {
+          'main': {
+              templateUrl: 'html/views/list.html',
+              controller: 'searchCtrl',
           }
         }
       })    
