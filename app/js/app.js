@@ -3,4 +3,3 @@ var jauntApp = angular.module('jauntApp', [
  	'jauntAppControllers',
   'ui.router'
 ]);
-  

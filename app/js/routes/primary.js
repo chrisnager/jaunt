@@ -10,7 +10,7 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
         views: {
           'main': {
               templateUrl: 'html/views/main.html',
-              controller: 'homeCtrl',
+              controller: 'mainCtrl',
           }
         }
       }) 
@@ -24,10 +24,10 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
         }
       })  
       .state('Search', {
-        url: '/jaunt/list',
+        url: '/jaunt/search',
         views: {
           'main': {
-              templateUrl: 'html/views/list.html',
+              templateUrl: 'html/views/search.html',
               controller: 'searchCtrl',
           }
         }
