@@ -1,8 +1,110 @@
 $test : orange;
+$color_black : #333333;
 
 body {
 	font-size: 20px;
 }
 
+.hero {
+	padding: 20px;
+}
+
+.hero--xl {
+	padding: 20px 0;
+}
+
+.hero--user {
+	background: $color_black;
+}
+
+.header {
+	font-weight: 300;
+}
+
+.header-light {
+	color: #FFF;
+}
+
+.circle--lg {
+	width: 120px;
+	height: 120px;
+	border-radius: 5em;
+	overflow: hidden;
+}
+
+.navigator-toolbar__content {
+	background: $color_black;
+	color: #FFF;
+	border-color: none;
+}
+
+.topcoat-navigation-bar__title {
+	color: #FFF;
+}
+
+.topcoat-navigation-bar {
+	border: none;
+}
+
+.page { 
+	background: #FFF;
+}
+
+.list {
+	display: none;
+}
+
+.list-inline li {
+	display: inline-block;
+}
+
+.user--info {
+	height: auto;
+}
+
+.user--info  .topcoat-tab-bar__button {
+	height: auto;
+	font-size: .7em;
+	line-height: 1.25em;
+	padding: 20px;
+}
+
+.user--info .topcoat-tab-bar__item  .topcoat-tab-bar__button {
+	border-bottom: 1px solid #CCCCCC;
+	background: #ECF0EB;
+}
+
+.user--info .topcoat-tab-bar__item  .topcoat-tab-bar__button:first-child {
+	border-right: 1px solid #CCCCCC;
+}
+
+.info--header {
+	font-weight: 900;
+	color: #333333;
+}
+
+.list--places {
+	font-size: .75em;
+	text-align: left;
+	padding: 20px;
+	line-height: .75em;
+	vertical-align: middle;
+	margin: 0;
+	border-bottom: 1px solid #CCCCCC;
+	display: inline-block;
+}
+
+.list--places + .row {
+	margin-top: 0;
+	padding-top: 20px
+}
+
+.list--places{
+	p,b {
+		padding: 5px;
+		margin: 0;
+	}
+	
+}	
 
 

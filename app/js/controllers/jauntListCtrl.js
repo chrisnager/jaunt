@@ -4,9 +4,7 @@ jauntAppControllers.controller('jauntListCtrl', ['$scope',
   function($scope) {
     console.log('jauntListCtrl');
 
-    $scope.title = "My Jaunt List";
-
-    $scope.name = "clintonhalpin";
+    $scope.username = "clintonhalpin";
 	$scope.displayName = "Clinton Halpin";
 	$scope.email = "clintonhalpin@gmail.com";
 	$scope.city = "New York City";
