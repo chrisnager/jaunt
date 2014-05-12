@@ -1,45 +1,25 @@
-<!-- <img src="{{photo}}">
-<p>{{name}}</p>
-
-<ons-button 
-    type="large"
-    ng-click="ons.screen.presentPage('html/views/createJaunt.html')">
-    Add New Jaunt
-</ons-button> 
- -->
-
-
 <ons-scroller class="center">
- <div class="hero hero--xl  hero--user">
-	 <p class="username header header-light">#{{username}}</p>
-	 <img class="circle--lg" src="{{photo}}">
- </div>
 
+	<div class="hero hero--xl  hero--user">
+		<p class="username header header-light">#{{user.name}}</p>
+		<img class="circle--lg" src="{{user.photo}}">
+	</div>
 
-
- <div class="topcoat-tab-bar full user--info">
-   <label class="topcoat-tab-bar__item">
-     <button class="topcoat-tab-bar__button full"><span class="info--header">20</span> <br /> Places </button>
-   </label>
-   <label class="topcoat-tab-bar__item">
-     <button class="topcoat-tab-bar__button full"><span class="info--header">5</span><br /> Shared Jaunts </button>
-   </label>
-</div>
-
-
+	<div class="topcoat-tab-bar full user--info">
+		<label class="topcoat-tab-bar__item">
+			<button class="topcoat-tab-bar__button full"><span class="info--header">{{ user.place_count }}</span> <br /> Places </button>
+		</label>
+		<label class="topcoat-tab-bar__item">
+			<button class="topcoat-tab-bar__button full"><span class="info--header">{{ user.permalink_count }}</span><br /> Shared Jaunts </button>
+		</label>
+	</div>
 
 	<ons-row class="list--places  list--places__header">
 		Recent Places
 	</ons-row>
 
-	<ons-row class="list--places">
-		<b>Prospect Park</b>
-		<p>2 attributes shared with 2 jaunt maps</p>
+	<ons-row class="list--places" ng-repeat="place in user.places">
+		<b>{{ place.name }}</b>
 	</ons-row>
 
-	<ons-row class="list--places">
-		<b>Prospect Park</b>
-		<p>2 attributes shared with 2 jaunt maps</p>
-	</ons-row>
 </ons-scroller>
-

@@ -2,8 +2,8 @@
 
 var jauntAppControllers = angular.module('jauntAppControllers', []);
 
-jauntAppControllers.controller('mainCtrl', ['$scope', 
-  function($scope) {
+jauntAppControllers.controller('mainCtrl', ['$scope', '$state', 
+  function($scope, $state) {
     console.log('mainCtrl');
 }]);
 

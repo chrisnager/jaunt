@@ -5,6 +5,10 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/jaunt");
 
   $stateProvider
+      
+
+
+
       .state('Home', {
         url: '/jaunt',
         views: {
