@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Jaunt App</title>  
   
-  <link rel="stylesheet" href="bower_components/onsenui/build/css/onsenui.css">
-  <link rel="stylesheet" href="bower_components/onsenui/build/css/topcoat-mobile-onsen-ios7.css">  
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" ng-repeat="file in $state.current.data.css" ng-href="{{ file }}">
 
   <script src="bower_components/angular/angular.js"></script>    
   <script src="bower_components/angular-touch/angular-touch.min.js"></script>   
@@ -20,9 +19,9 @@
   <script src="js/controllers/searchCtrl.js"></script>
   
 </head>
-<body ng-class="uiState">   
+<body ng-class="{{ $state.current.name }}">
   <ons-screen>
-      <ons-navigator>
+      <ons-navigator title="{{ $state.current.name }}">
           <ons-page class="center">
               <div ui-view="main"></div>      
           </ons-page>

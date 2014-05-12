@@ -1,8 +1,10 @@
 'use strict';
 
-jauntAppControllers.controller('listCtrl', ['$scope', 
-  function($scope) {
+jauntAppControllers.controller('listCtrl', ['$scope', '$state',
+  function($scope,$state) {
     console.log('listCtrl');
+
+    console.log($state);
 
 	$scope.user = {
 		name: 'clintonhalpin',

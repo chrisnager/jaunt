@@ -5,12 +5,11 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/jaunt");
 
   $stateProvider
-      
-
-
-
-      .state('Home', {
+      .state('home', {
         url: '/jaunt',
+        data: {
+            css: ['css/home.css']
+        },
         views: {
           'main': {
               templateUrl: 'html/views/main.html',
@@ -18,7 +17,7 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
           }
         }
       }) 
-      .state('List', {
+      .state('list', {
         url: '/jaunt/list',
         views: {
           'main': {
@@ -27,7 +26,7 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
           }
         }
       })  
-      .state('Search', {
+      .state('search', {
         url: '/jaunt/search',
         views: {
           'main': {
