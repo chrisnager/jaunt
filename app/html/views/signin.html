@@ -1,23 +1,26 @@
 <ons-navigator title="Sign In" right-button-icon="fa fa-lg fa-times" on-right-button-click="ons.screen.dismissPage()">
     <ons-page style="padding : 8px">
-    <ons-text-input 
-        ng-model="email"
-        placeholder="Email..." 
-        style="display: block; width: 100%">
-    </ons-text-input>
-    <br />
-    <ons-text-input 
-        ng-model="password"
-        placeholder="Password" 
-        style="display: block; width: 100%">
-    </ons-text-input>
-    <br />
-
+    <form ng-submit="signIn()" ng-controller="mainCtrl">
+        <ons-text-input 
+            ng-model="email"
+            placeholder="Email..." 
+            style="display: block; width: 100%">
+        </ons-text-input>
+        <br />
+        <ons-text-input 
+            ng-model="password"
+            placeholder="Password" 
+            style="display: block; width: 100%">
+        </ons-text-input>
+        <br />
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+    <p id="signed_in_as" class="navbar-text navbar-right" ng-show="auth.user">Signed in as {{auth.user.email}}</p>
     <ons-button 
-        type="cta-large" 
-        style="display: block; width: 100%; margin-top: 8px;"
-        ui-sref="list">
-        Sign In
+    type="large"
+    ng-click="logOut()"
+    ng-controller="mainCtrl">
+    Log out
     </ons-button>
     </ons-page>
 </ons-navigator>

@@ -1,7 +1,7 @@
 'use strict';
 
-jauntAppControllers.controller('listCtrl', ['$scope', '$state',
-  function($scope,$state) {
+jauntAppControllers.controller('listCtrl', ['$scope', '$rootScope', '$state',
+  function($scope,$state,$rootScope) {
     console.log('listCtrl');
 
     console.log($state);

@@ -1,7 +1,8 @@
 var jauntApp = angular.module('jauntApp', [
  	'onsen.directives',
  	'jauntAppControllers',
-	'ui.router'
+	'ui.router',
+	'firebase'
 ]);
 
 jauntApp.run(
