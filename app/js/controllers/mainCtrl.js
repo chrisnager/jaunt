@@ -2,54 +2,32 @@
 
 var jauntAppControllers = angular.module('jauntAppControllers', []);
 
-jauntAppControllers.controller('mainCtrl', ['$scope', '$rootScope', '$state', "$firebase", "$firebaseSimpleLogin", 
-  function($scope, $rootScope, $state, $firebase, $firebaseSimpleLogin ) {
-    console.log('mainCtrl');
-
-  	var ref = new Firebase('https://jaunt-app.firebaseio.com/');
-    $rootScope.auth = $firebaseSimpleLogin(ref);
+jauntAppControllers.controller('mainCtrl', function($scope, $rootScope, $state, $firebaseSimpleLogin, FIREBASE_URI ) { 
     
-    $scope.signIn = function () {
-      $rootScope.auth.$login('password', {
-        email: $scope.email,
-        password: $scope.password
-      }).then(function(user) {
-        $rootScope.alert.message = '';
-      }, function(error) {
-        if (error = 'INVALID_EMAIL') {
-          console.log('email invalid or not signed up — trying to sign you up!');
-          $scope.signUp();
-        } else if (error = 'INVALID_PASSWORD') {
-          console.log('wrong password!');
-        } else {
-          console.log(error);
-        }
-      });
-    }
+    $scope.loginService =  $firebaseSimpleLogin(new Firebase(FIREBASE_URI));
+    $scope.newUser = { email : '', password : ''};
+    $scope.currentUser = null;
 
-    $scope.signUp = function() {
-      $rootScope.auth.$createUser($scope.email, $scope.password, function(error, user) {
-        if (!error) {
-          $rootScope.alert.message = '';
-        } else {
-          $rootScope.alert.message = 'The username and password combination you entered is invalid.';
-        }
-      });
-    }
+    $scope.getCurrentUser = function() {
+      $scope.loginService.$getCurrentUser()
+        .then( function(user) {
+          $scope.currentUser = user;
+          $state.transitionTo('home');
+        });
+    };
 
-     $scope.logOut = function($event) {
-     	$rootScope.auth.$logout();
-     	console.log($rootScope.auth);
-     }	
+    $scope.getCurrentUser();
 
-}]);
+    $scope.login = function( email, password ) {
+      $scope.loginService.$login('password', { email: email, password: password })
+        .then( function(user) {
+          $scope.currentUser = user;
+        });
+    };
 
+    $scope.logOut = function(){
+      $scope.loginService.$logout();
+      $scope.currentUser = null;
+    };
 
-jauntAppControllers.controller('AlertCtrl', [
-  '$scope', '$rootScope', function($scope, $rootScope) {
-    $rootScope.alert = {};
-  }
-]);
-
-
-
+});

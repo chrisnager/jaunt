@@ -1,0 +1,18 @@
+<div ng-controller="authenticationCtrl as auth">
+	<!-- <a href ng-click="authenticate('signup')">Sign Up</a> -->
+	<div>
+		<h1>Sign Up</h1>
+		<form ng-submit="auth.signIn">
+			<label>Name</label>
+			<input ng-model="name" placeholder="Joe Smith...">
+			<label>Email</label>
+			<input ng-model="email" placeholder="joe@gmail.com">
+			<label>Password</label>
+			<input ng-model="password" placeholder="test...">
+			 <input type="submit" value="Submit" />
+		</form>
+
+	</div>
+</div>
+
+

@@ -17,12 +17,12 @@ jauntApp.config(function($stateProvider, $urlRouterProvider) {
           }
         }
       }) 
-      .state('list', {
-        url: '/jaunt/list',
+      .state('sign-in', {
+        url: '/sign-in',
         views: {
           'main': {
-              templateUrl: 'html/views/list.html',
-              controller: 'listCtrl',
+              templateUrl: 'html/views/signin.html',
+              controller: 'mainCtrl',
           }
         }
       })  
