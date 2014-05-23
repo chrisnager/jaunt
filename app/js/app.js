@@ -1,13 +1,13 @@
-var jauntApp = angular.module('jauntApp', [
+var app = angular.module('app', [
  	'onsen.directives',
- 	'jauntAppControllers',
+ 	'appCtrl',
 	'ui.router',
 	'firebase',
 ]);
 
-jauntApp.constant('FIREBASE_URI', 'https://jaunt-app.firebaseio.com/');
+app.constant('FIREBASE_URI', 'https://jaunt-app.firebaseio.com/');
 
-jauntApp.run( [ '$rootScope', '$state', '$stateParams',
+app.run( [ '$rootScope', '$state', '$stateParams',
     function ($rootScope,   $state,   $stateParams) {
 	    $rootScope.$state = $state;
 	    $rootScope.$stateParams = $stateParams;

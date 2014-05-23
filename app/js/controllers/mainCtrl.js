@@ -1,18 +1,17 @@
 'use strict';
 
-var jauntAppControllers = angular.module('jauntAppControllers', []);
+var appCtrl = angular.module('appCtrl', []);
 
-jauntAppControllers.controller('mainCtrl', function($scope, $rootScope, $state, $firebaseSimpleLogin, FIREBASE_URI ) { 
-    
-    $scope.loginService =  $firebaseSimpleLogin(new Firebase(FIREBASE_URI));
-    $scope.newUser = { email : '', password : ''};
+appCtrl.controller('mainCtrl', function($scope, $rootScope, $state, $firebaseSimpleLogin, FIREBASE_URI ) { 
+    $scope.loginService =  $firebaseSimpleLogin(new Firebase(FIREBASE_URI)),
+    $scope.newUser = { email : '', password : ''},
     $scope.currentUser = null;
 
     $scope.getCurrentUser = function() {
       $scope.loginService.$getCurrentUser()
         .then( function(user) {
           $scope.currentUser = user;
-          $state.transitionTo('home');
+          // $state.transitionTo('home');
         });
     };
 
@@ -31,3 +30,5 @@ jauntAppControllers.controller('mainCtrl', function($scope, $rootScope, $state, 
     };
 
 });
+
+

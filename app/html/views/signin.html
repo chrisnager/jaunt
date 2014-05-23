@@ -1,14 +1,10 @@
-{{currentUser.email}}
+<div ng-show="currentUser">{{currentUser.email}} — <a href ng-show="currentUser" ng-click="logOut()">Log Out</a></div>
 
 <form name="form">
-    <input ng-model="newUser.email" placeholder="Email..." style="display: block; width: 100%">
-    <br />
-    <input ng-model="newUser.password" placeholder="password..." style="display: block; width: 100%">
-    <br />
-    <button ng-click="login(newUser.email, newUser.password)">Submit!</button>
+	<h1 class="tc">Log In</h1>
+    <input class="br brd--dark" ng-model="newUser.email" placeholder="Email">
+    <input class="br brd--dark" ng-model="newUser.password" placeholder="Password">
+    <button class="br" ng-click="login(newUser.email, newUser.password)">Submit</button>
 </form>
 
-<br />
-<br />
 
-<button ng-click="logOut()">Log Out</button>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="jauntApp">
+<html lang="en" ng-app="app">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,12 +24,6 @@
 
 </head>
 <body ng-class="{{ $state.current.name }}">
-<!--   <ons-screen>
-      <ons-navigator title="{{ $state.current.name }}">
-          <ons-page class="center"> -->
-              <div ui-view="main"></div>      
-          <!-- </ons-page>
-      </ons-navigator>
-  </ons-screen> -->
+    <div ui-view="main"></div>      
 </body>
 </html>

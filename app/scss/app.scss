@@ -1,10 +1,51 @@
-@import '../bower_components/onsenui/build/css/onsenui.css';
-@import '../bower_components/onsenui/build/css/topcoat-mobile-onsen-ios7.css';
 @import 'vars';
-@import 'globals';  
+@import '../bower_components/normalize-css/normalize';  
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+	font-size: $font-normal;
+	margin: 40px;
+	background: #E1E1E1;
+}
 
+form {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+input {
+	border: none;
+	background: #FFF;
+	padding: 20px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+button {
+	display: block;
+	width: 100%;
+	background: #4ECD80;
+	padding: 20px;
+	border: 0;
+	margin: 10px 0;
+}
+
+.tc {
+	text-align: center;
+}
+
+.br {
+	border-radius: 4px;
+}
+
+.brd--dark {
+	border: 1px solid rgba(0,0,0,.2);
+}
 
 
 

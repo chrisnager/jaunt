@@ -16,7 +16,7 @@ module.exports = function( grunt ) {
     watch: {
       livereload: {
         files: [
-          'app/{,*/}*.html',
+          'app/**/*.html',
           'app/{,*/}*.{scss,js,png,jpg,gif,svg}'
         ],
         tasks: ['sass'],

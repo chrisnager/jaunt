@@ -1,10 +1,15 @@
 'use strict';
 
-jauntApp.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise("/jaunt");
 
   $stateProvider
+      .state('primary', {
+        url: '/',
+        abstract : true,
+        controller : 'authenticationCtrl'
+      })
       .state('home', {
         url: '/jaunt',
         data: {
